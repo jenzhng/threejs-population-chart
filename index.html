@@ -8,6 +8,7 @@
     body {
     margin: 0;
     overflow: hidden;
+    font-family: Arial, sans-serif; 
   }
 
   .text {
@@ -20,9 +21,50 @@
     border: 1px solid black;
     pointer-events: none; /* Prevent text from interfering with pointer events */
   }
+   #title {
+      position: absolute; 
+      top: 10px; 
+      left: 10px; 
+      color: white; 
+      font-size: 24px; 
+      background-color: rgba(0, 0, 0, 0.5); 
+      padding: 10px; 
+      border-radius: 5px; 
+    }
+    #gui-container { 
+      position: absolute; 
+      top: 50px; 
+      left: 10px; 
+    }
+    #link-button {
+      position: absolute; 
+      bottom: 10px; 
+      right: 10px; 
+      background-color: #007bff; 
+      color: white; 
+      border: none; 
+      border-radius: 5px; 
+      padding: 10px 20px; 
+      font-size: 16px; 
+      cursor: pointer; 
+      text-decoration: none; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+    }
+    #link-button:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
+  <!-- Title Element -->
+  <div id="title">Three.js Population Chart</div>
+
+  <!-- Link Button -->
+  <a id="link-button" href="https://github.com/jenzhng/threejs-population-chart" target="_blank" rel="noopener noreferrer">
+    View on GitHub
+  </a>
   <script src="bundle.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dat.gui@0.7.7/build/dat.gui.min.js"></script>
 </body>
