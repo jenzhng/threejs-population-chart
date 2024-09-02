@@ -44,3 +44,13 @@ The application will be available at **`http://localhost:3000`**
 
 This project uses hierarchical JSON data for the treemap. Ensure your data follows this structure:
    ```json
+   [
+  {
+    "countryName": "Country A",
+    "peaks": [0.010, 0.011, 0.012, 0.013, 0.014, 0.015, 0.016, 0.017, 0.018, 0.019, 0.020, 0.021, 0.022, 0.023, 0.024, 0.025]
+  },
+  {
+    "countryName": "Country B",
+    "peaks": [0.012, 0.013, 0.014, 0.015, 0.016, 0.017, 0.018, 0.019, 0.020, 0.021, 0.022, 0.023, 0.024, 0.025, 0.026, 0.027]
+  }
+]
